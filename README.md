@@ -26,7 +26,7 @@ You can use `calibration/isolate_delta.py` to find pareto-optimal hyperparameter
 python3 -m calibration.isolate_delta --model {opt,llama,mistral} --algorithm {KGW,SIR,EWD} --gamma GAMMA [--target_tpr TARGET_TPR] [--target_fpr TARGET_FPR] [--num_examples NUM_EXAMPLES] [--generation_length GENERATION_LENGTH] [--output_dir OUTPUT_DIR]
 ```
 
-Once you have run this script for all the gamma values you wish to consider for pareto-optimal calibration, you can use `evaluation/downstream_eval.py` to perform downstream evaluations. 
+Once you have run this script for all the gamma values you wish to consider for pareto-optimal calibration, you can use `evaluation/downstream_eval.py` to perform downstream evaluations. The script automatically chooses the pareto-optimal `(gamma, delta)` setting to use by scanning the calibration results. 
 
 ```
 python3 -m evaluation.downstream_eval --model {opt,llama,mistral} --algorithm {KGW,SIR,EWD} --dataset {boolq,sst2,cb,hellaswag,piqa,drop,squad2,wmt14enfr,wmt20ende} [--target_tpr TARGET_TPR] [--target_fpr TARGET_FPR] [--calibration_results_dir CALIBRATION_RESULTS_DIR] [--num_examples NUM_EXAMPLES] [--seed SEED] [--scores_dir SCORES_DIR] [--output_dir OUTPUT_DIR]
