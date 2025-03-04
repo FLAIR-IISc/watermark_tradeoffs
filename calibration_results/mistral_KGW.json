@@ -1,0 +1,30 @@
+[
+  {
+    "gamma": 0.1,
+    "target_tpr": 0.75,
+    "target_fpr": 0.01,
+    "delta": 1.8,
+    "perplexity": 20.46
+  },
+  {
+    "gamma": 0.25,
+    "target_tpr": 0.75,
+    "target_fpr": 0.01,
+    "delta": 1.48,
+    "perplexity": 20.97
+  },
+  {
+    "gamma": 0.5,
+    "target_tpr": 0.75,
+    "target_fpr": 0.01,
+    "delta": 2.09,
+    "perplexity": 25.12
+  },
+  {
+    "gamma": 0.75,
+    "target_tpr": 0.75,
+    "target_fpr": 0.01,
+    "delta": 3.91,
+    "perplexity": 33.03
+  }
+]

@@ -1,0 +1,6 @@
+nltk
+tqdm
+torch
+jieba
+accelerate
+transformers

@@ -1,0 +1,9 @@
+[
+  {
+    "gamma": null,
+    "target_tpr": 0.75,
+    "target_fpr": 0.01,
+    "delta": 1.31,
+    "perplexity": 22.13
+  }
+]
